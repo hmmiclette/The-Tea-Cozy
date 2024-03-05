@@ -25,14 +25,13 @@ header{
     height: 50px;
     margin-left: 10px;
 }
-nav{
-    margin: 10px;
+li{
     text-decoration: underline;
+    list-style: none;
     font-size: 22px;
-    display: inline-flex;
-    padding: 0px 15px;
-    justify-content: space-between;
-} /*can't get the nav options to show properly, no space between words*/
+    display: inline;
+    padding: 15px;
+} 
 /*Main Content*/
 main {
     position: relative;
