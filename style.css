@@ -1,0 +1,168 @@
+*{
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 22px;
+}
+header{
+    width: 100%;
+    max-height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    z-index:1;
+    opacity:1;
+}
+.logo{
+    height: 50px;
+    margin-left: 10px;
+}
+nav{
+    margin: 10px;
+    text-decoration: underline;
+    font-size: 22px;
+    display: inline-flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+} /*can't get the nav options to show properly, no space between words*/
+/*Main Content*/
+main {
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;
+}
+/* Missions Section*/
+#Mission {
+    width: 90%;
+    max-height: 700px;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 1200px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Mission h2, 
+#Mission h4 {
+    width: 100%;
+    padding: 0.5%;
+}
+/*Featured Tea Section*/
+#featured-tea {
+    width: 75%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.container-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.container-head h2{
+    margin: 2% 0;
+}
+.figure-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+figure{
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+figure img{
+    max-width: 100%;
+    height: 200px;
+    display: block;
+}
+figcaption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+/*Locations Section*/
+#Locations {
+    width: 90%;
+    max-width: 1200px;
+    max-height: 500px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 1200px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    padding-top: 5%;
+    margin-top: 5%;
+}
+.locations-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.locations-title h2 {
+    background-color: transparent;
+}
+.locations-container {
+    margin: auto;
+    max-width: 1050px;
+    background-color: black;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+}/* how do you make each location its own box?*/
+/*contact section*/
+#contact {
+    height: 200px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+#contact h2{
+    padding-bottom: 25px;
+}
+#contact h5{
+    padding-bottom: 25px;
+}
+/*Footer*/
+.copyright{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+/*questions:
+whats the difference between padding and margins?
+what is the best way to create child elements within the parent element?
