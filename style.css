@@ -23,15 +23,16 @@ header{
 }
 .logo{
     height: 50px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 li{
     text-decoration: underline;
     list-style: none;
     font-size: 22px;
     display: inline;
-    padding: 15px;
-} 
+    padding-right: 15px;
+    flex-grow: 1;
+}
 /*Main Content*/
 main {
     position: relative;
@@ -55,9 +56,6 @@ main {
     flex-grow: 1;
     flex-basis: 1200px;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 #Mission h2, 
 #Mission h4 {
@@ -92,8 +90,7 @@ figure{
     width: 300px;
     height: 200px;
     margin: 15px;
-    justify-content: space-around;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 figure img{
     max-width: 100%;
@@ -118,30 +115,59 @@ figcaption {
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
     padding-top: 5%;
     margin-top: 5%;
+    
 }
 .locations-title {
-    width: 100%;
     display: flex;
     justify-content: center;
     background-color: transparent;
+    padding-bottom: 15px;
 }
 .locations-title h2 {
-    background-color: transparent;
+    background-color: transparent
 }
-.locations-container {
-    margin: auto;
-    max-width: 1050px;
-    background-color: black;
-    opacity: 1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 300px;
+
+.downtown {
     height: 300px;
+    width: 300px;
+    display: flex;
+    opacity: 1;
     padding: 10px;
-    margin: 20px;
-}/* how do you make each location its own box?*/
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    flex-direction: column;
+    justify-content: center;
+}
+.east-bayside {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    opacity: 1;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    flex-direction: column;
+    justify-content: center;
+}
+.oakdale {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    opacity: 1;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    flex-direction: column;
+    justify-content: center;
+}
+.locations-container{
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+}
 /*contact section*/
 #contact {
     height: 200px;
@@ -162,6 +188,3 @@ figcaption {
     text-align: left;
     font-size: 15px;
 }
-/*questions:
-whats the difference between padding and margins?
-what is the best way to create child elements within the parent element?
